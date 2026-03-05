@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gate Pass Form</title>
+    <link rel="stylesheet" href="gate_pass.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <!-- HEADER -->
+    <div class="form-header">
+        <h2>Hostel Gate Pass</h2>
+    
+    </div>
+
+    <form id="gateForm">
+
+        <!-- NAME -->
+        <div class="form-box">
+            <label>Name </label>
+            <input type="text" id="name" placeholder="Your answer">
+            <small class="error"></small>
+        </div>
+
+        <!-- YEAR -->
+        <div class="form-box">
+            <label>Year </label>
+            <select id="year">
+                <option value="">Select year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+            <small class="error"></small>
+        </div>
+
+        <!-- DEPT -->
+        <div class="form-box">
+            <label>Department </label>
+            <select id="dept">
+                <option value="">Select department</option>
+                <option>ECE</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+                <option>RM</option>
+            </select>
+            <small class="error"></small>
+        </div>
+
+        <!-- REG NO -->
+        <div class="form-box">
+            <label>Register Number </label>
+            <input type="text" id="regno" placeholder="Your answer">
+            <small class="error"></small>
+        </div>
+
+        <!-- PLACE -->
+        <div class="form-box">
+            <label>Place of Visit </label>
+            <input type="text" id="place" placeholder="Your answer">
+            <small class="error"></small>
+        </div>
+
+        <!-- PURPOSE -->
+        <div class="form-box">
+            <label>Purpose </label>
+            <textarea id="purpose" placeholder="Your answer"></textarea>
+            <small class="error"></small>
+        </div>
+
+        <!-- OUTGOING -->
+        <div class="form-box">
+            <label>Outgoing Date & Time </label>
+            <div class="datetime">
+                <input type="date" id="outDate">
+                <input type="time" id="outTime">
+                <select id="outPeriod">
+                    <option value="">AM/PM</option>
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+            <small class="error"></small>
+        </div>
+
+        <!-- INCOMING -->
+        <div class="form-box">
+            <label>Incoming Date & Time </label>
+            <div class="datetime">
+                <input type="date" id="inDate">
+                <input type="time" id="inTime">
+                <select id="inPeriod">
+                    <option value="">AM/PM</option>
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+            <small class="error"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <p id="success"></p>
+
+    </form>
+
+</div>
+
+<script src="gate_pass.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins',sans-serif;
+    
+    background: #f6e7f6;
+    margin: 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* HEADER */
+.form-header {
+    background: #b012cf;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.form-header p {
+    font-size: 13px;
+}
+
+/* FORM BOX */
+.form-box {
+    background: white;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* INPUT */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-bottom: 2px solid #673ab7;
+}
+
+/* DATETIME LINE */
+.datetime {
+    display: flex;
+    gap: 10px;
+}
+
+.datetime input, .datetime select {
+    flex: 1;
+}
+
+/* BUTTON */
+button {
+    background: #b012cf;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 120px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #bc9bfd;
+}
+
+
+/* ERROR */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* SUCCESS */
+#success {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
+
+
